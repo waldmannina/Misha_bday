@@ -63,6 +63,14 @@
             border-color: black;
         }
 
+        .warning {
+            font-size: 14px;
+            color: orange;
+            margin-top: 25px;
+            text-shadow: 0 0 5px red;
+            animation: flicker 1.5s infinite alternate;
+        }
+
         @keyframes flicker {
             0% { opacity: 1; }
             100% { opacity: 0.7; }
@@ -82,7 +90,11 @@
         <img src="https://media.tenor.com/F6FS7JkV4AoAAAAC/yoda-star-wars.gif" alt="Мудрый Йода GIF">
     </div>
 
-    <a href="page4.html" class="button">Не знаешь, куда идти? нажми только в случае необходимости </a>
+    <div class="warning">
+        ⚠️ Нажми только если совсем не знаешь, куда идти!
+    </div>
+
+    <a href="page4.html" class="button">Не знаешь, куда идти?</a>
 
     <audio autoplay loop>
         <source src="https://www.myinstants.com/media/sounds/star-wars-theme.mp3" type="audio/mpeg">
