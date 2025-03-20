@@ -10,9 +10,8 @@
         html, body {
             margin: 0;
             padding: 0;
-            height: auto;
             min-height: 100vh;
-            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQng_j_3bhQMuczqP4cuVmJZpIDuXC3ZxZ4bA&s') no-repeat center center fixed;
+            background: url('https://cdn.pixabay.com/photo/2020/06/30/09/47/starwars-5355787_1280.jpg') no-repeat center center fixed;
             background-size: cover;
             color: yellow;
             font-family: 'Press Start 2P', cursive;
@@ -22,20 +21,21 @@
 
         h1 {
             font-size: 28px;
-            text-shadow: 0 0 10px yellow, 0 0 20px orange;
+            text-shadow: 
+                2px 2px 0 black,
+                -2px -2px 0 black,
+                -2px 2px 0 black,
+                2px -2px 0 black;
             animation: flicker 1.5s infinite alternate;
             padding: 20px;
-        }
-
-        .gif-container {
-            margin-top: 20px;
+            margin-bottom: 20px;
         }
 
         .gif-container img {
-            width: 90%;
-            max-width: 300px;
+            width: 60%; /* Smaller GIF */
+            max-width: 200px;
             border-radius: 10px;
-            box-shadow: 0 0 20px yellow;
+            box-shadow: 0 0 15px yellow;
         }
 
         .button {
@@ -43,7 +43,7 @@
             color: yellow;
             border: 3px solid yellow;
             padding: 12px 20px;
-            font-size: 18px;
+            font-size: 16px;
             cursor: pointer;
             margin-top: 30px;
             display: inline-block;
