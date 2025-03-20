@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Предупреждение Джедая</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: orange;
+            font-family: 'Press Start 2P', cursive;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .warning {
+            font-size: 18px;
+            text-shadow: 0 0 10px red;
+            margin-bottom: 30px;
+            padding: 20px;
+        }
+
+        .button {
+            background: black;
+            color: yellow;
+            border: 3px solid yellow;
+            padding: 12px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background: yellow;
+            color: black;
+            border-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="warning">
+        Нажми только если совсем не знаешь, куда идти!
+    </div>
+
+    <a href="page4.html" class="button">Я всё равно не знаю!</a>
+</body>
+</html>
