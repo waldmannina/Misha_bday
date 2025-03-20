@@ -10,26 +10,35 @@
             padding: 0;
             height: 100vh;
             background-color: black;
+            color: yellow;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
+            font-family: 'Press Start 2P', cursive;
+        }
+        .emoji {
             font-size: 100px;
+            margin-bottom: 30px;
         }
-        a {
-            text-decoration: none;
-        }
-        .emoji-button {
+        .button {
+            background: black;
+            color: yellow;
+            border: 3px solid yellow;
+            padding: 12px 20px;
+            font-size: 16px;
             cursor: pointer;
-            transition: transform 0.2s;
+            text-decoration: none;
+            transition: 0.3s;
         }
-        .emoji-button:hover {
-            transform: scale(1.2);
+        .button:hover {
+            background: yellow;
+            color: black;
         }
     </style>
 </head>
 <body>
-    <a href="level2.html">
-        <div class="emoji-button">💩</div>
-    </a>
+    <div class="emoji">💩</div>
+    <a href="level2.html" class="button">Покакать</a>
 </body>
 </html>
