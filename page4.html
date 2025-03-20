@@ -3,23 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>💩</title>
-
+    <title>The Shit Page</title>
     <style>
-        body {
-            background: black;
-            color: white;
-            font-size: 100px;
-            text-align: center;
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            background-color: black;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
-            margin: 0;
+        }
+        img.button {
+            max-width: 300px;
+            width: 90%;
+            cursor: pointer;
+            border-radius: 15px;
+            box-shadow: 0 0 20px yellow;
+        }
+        h2 {
+            color: yellow;
+            font-family: 'Press Start 2P', cursive;
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 20px;
+            text-shadow: 0 0 10px orange;
         }
     </style>
 </head>
 <body>
-    💩
+    <h2>Нажми на ЭТО, чтобы идти дальше!</h2>
+
+    <a href="level2.html">
+        <img class="button" src="https://media.tenor.com/7FEYQ0djJ88AAAAd/poop.gif" alt="Click to continue">
+    </a>
 </body>
 </html>
