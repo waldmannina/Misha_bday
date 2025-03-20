@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Are You Ready, Jedi?</title>
+    
+    <style>
+        /* Import Star Wars-style font */
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+        /* Background - Star Wars space effect */
+        body {
+            background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQng_j_3bhQMuczqP4cuVmJZpIDuXC3ZxZ4bA&s') no-repeat center center fixed;
+            background-size: cover;
+            color: yellow;
+            font-family: 'Press Start 2P', cursive;
+            text-align: center;
+            padding-top: 100px;
+            overflow: hidden;
+        }
+
+        /* Title styling - Star Wars glowing text */
+        h1 {
+            font-size: 40px;
+            text-shadow: 0 0 10px yellow, 0 0 20px orange;
+            animation: flicker 1.5s infinite alternate;
+        }
+
+        /* Button styles - Star Wars UI */
+        .button {
+            background: black;
+            color: yellow;
+            border: 3px solid yellow;
+            padding: 15px 40px;
+            font-size: 22px;
+            cursor: pointer;
+            margin: 20px;
+            display: inline-block;
+            transition: 0.3s;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+
+        .button:hover {
+            background: yellow;
+            color: black;
+            border-color: black;
+        }
+
+        /* Flickering effect */
+        @keyframes flicker {
+            0% { opacity: 1; }
+            100% { opacity: 0.7; }
+        }
+    </style>
+</head>
+<body>
+    <h1>Are You Ready, Jedi?</h1>
+    
+    <!-- Corrected Link to ready.html -->
+<a href="page2.html" class="button">Yes</a>
+    <button class="button" onclick="alert('Fear is the path to the Dark Side... Try again!')">No</button>
+
+</body>
+</html>
