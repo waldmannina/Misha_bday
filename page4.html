@@ -13,19 +13,23 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            font-size: 100px;
         }
-        img.button {
-            max-width: 300px;
-            width: 90%;
+        a {
+            text-decoration: none;
+        }
+        .emoji-button {
             cursor: pointer;
-            border-radius: 15px;
-            box-shadow: 0 0 20px yellow;
+            transition: transform 0.2s;
+        }
+        .emoji-button:hover {
+            transform: scale(1.2);
         }
     </style>
 </head>
 <body>
     <a href="level2.html">
-        <img class="button" src="https://media.tenor.com/7FEYQ0djJ88AAAAd/poop.gif" alt="Click to continue">
+        <div class="emoji-button">💩</div>
     </a>
 </body>
 </html>
